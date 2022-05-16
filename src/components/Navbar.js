@@ -6,7 +6,7 @@ const Navbar = ({ children }) => {
     <div className="drawer drawer-end ">
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
-        <div className="w-full navbar bg-base-100 px-2 lg:px-20 fixed top-0">
+        <div className="w-full navbar bg-base-100 px-2 lg:px-20 fixed top-0 z-50">
           <div className="flex-1 px-2 mx-2 text-2xl">Clean Co.</div>
           <div className="flex-none lg:hidden">
             <label htmlFor="my-drawer-3" className="btn  btn-square btn-ghost">
@@ -53,17 +53,17 @@ const Navbar = ({ children }) => {
                   Login
                 </NavLink>
               </li>
-              
-              <li class="dropdown dropdown-hover dropdown-end">
+
+              <li className="dropdown dropdown-hover dropdown-end">
                 <label
-                  tabindex="0"
-                  class="btn btn-primary rounded-lg btn-outline m-1 uppercase"
+                  tabIndex="0"
+                  className="btn btn-primary rounded-lg btn-outline m-1 uppercase"
                 >
                   Book Now
                 </label>
                 <ul
-                  tabindex="0"
-                  class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+                  tabIndex="0"
+                  className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
                 >
                   <li>
                     <a>Item 1</a>
@@ -73,11 +73,14 @@ const Navbar = ({ children }) => {
                   </li>
                 </ul>
               </li>
-              <label data-toggle-theme="dark,light" class="swap swap-rotate">
+              <label
+                data-toggle-theme="dark,light"
+                className="swap swap-rotate"
+              >
                 <input type="checkbox" />
 
                 <svg
-                  class="swap-on fill-current w-10 h-10"
+                  className="swap-on fill-current w-10 h-10"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                 >
@@ -85,7 +88,7 @@ const Navbar = ({ children }) => {
                 </svg>
 
                 <svg
-                  class="swap-off fill-current w-10 h-10"
+                  className="swap-off fill-current w-10 h-10"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                 >
